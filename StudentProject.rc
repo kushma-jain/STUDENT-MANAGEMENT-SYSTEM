@@ -1,0 +1,400 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StudentProject"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Student Project by using VC++",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Designed By Kushma 2019",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STUDENTPROJECT_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "StudentProject"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,129,50,14
+    CTEXT           "ADMIN LOGIN PAGE",IDC_STATIC,49,17,200,8
+    LTEXT           "Admin Name",IDC_STATIC,83,45,64,15
+    EDITTEXT        IDC_EDIT1,160,46,94,16,ES_AUTOHSCROLL
+    LTEXT           "Admin Password",IDC_STATIC,83,84,64,15
+    EDITTEXT        IDC_EDIT2,160,83,94,16,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_ADMINMAINFORM_DIALOG DIALOG DISCARDABLE  0, 0, 366, 268
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Admin Main Form",IDC_STATIC,47,23,246,20,WS_BORDER
+    GROUPBOX        "MAIN MENU",IDC_STATIC,47,54,211,197
+    CONTROL         "New Student",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,72,
+                    68,129,17
+    CONTROL         "Delete Student",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    72,96,129,17
+    CONTROL         "Retrieve Student",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,72,152,129,17
+    CONTROL         "Upate Student",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,
+                    72,124,129,17
+    CONTROL         "Exit",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,72,211,129,
+                    17
+    CONTROL         "ALL STUDENTS",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,72,
+                    183,110,17
+END
+
+IDD_NEWSTUDENTFORM_DIALOG DIALOG DISCARDABLE  0, 0, 489, 265
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Student Form"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "NEW STUDENT",IDOK,147,209,82,14
+    PUSHBUTTON      "GO BACK",IDCANCEL,241,209,82,14
+    CTEXT           "NEW STUDENT FORM",IDC_STATIC,113,14,267,17
+    LTEXT           "Student ID",IDC_STATIC,150,39,68,12
+    EDITTEXT        IDC_EDIT1,236,36,102,17,ES_AUTOHSCROLL
+    LTEXT           "Student Name",IDC_STATIC,150,67,68,12
+    EDITTEXT        IDC_EDIT2,236,64,102,17,ES_AUTOHSCROLL
+    LTEXT           "Semester",IDC_STATIC,150,95,68,12
+    EDITTEXT        IDC_EDIT3,236,92,102,17,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,150,146,68,12
+    EDITTEXT        IDC_EDIT4,236,143,102,17,ES_AUTOHSCROLL
+    LTEXT           "Marks",IDC_STATIC,150,174,68,12
+    EDITTEXT        IDC_EDIT5,236,171,102,17,ES_AUTOHSCROLL
+    LTEXT           "Department",IDC_STATIC,150,119,68,12
+    EDITTEXT        IDC_EDIT7,236,116,102,17,ES_AUTOHSCROLL
+END
+
+IDD_DELETESTUDENTFORM_DIALOG DIALOG DISCARDABLE  0, 0, 497, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete Student Form"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "DELETE STUDENT",IDOK2,155,89,82,14
+    PUSHBUTTON      "GO BACK",IDCANCEL2,249,89,82,14
+    LTEXT           "Student_id",IDC_STATIC,155,55,52,12
+    EDITTEXT        IDC_EDIT1,235,53,102,17,ES_AUTOHSCROLL
+    CTEXT           "DELETE STUDENT FORM",IDC_STATIC,113,22,267,17
+END
+
+IDD_MODIFYSTUDENTFORM_DIALOG DIALOG DISCARDABLE  0, 0, 518, 274
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modify Student Form"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "MODIFY STUDENT",IDOK,152,222,78,28
+    PUSHBUTTON      "GO BACK",IDCANCEL,249,222,70,28
+    CTEXT           "MODIFY STUDENT FORM",IDC_STATIC,113,14,267,17
+    LTEXT           "Student ID",IDC_STATIC,162,51,68,12
+    EDITTEXT        IDC_EDIT1,248,48,102,17,ES_AUTOHSCROLL
+    LTEXT           "Student Name",IDC_STATIC,162,79,68,12
+    EDITTEXT        IDC_EDIT2,248,76,102,17,ES_AUTOHSCROLL
+    LTEXT           "Semester",IDC_STATIC,162,107,68,12
+    EDITTEXT        IDC_EDIT3,248,104,102,17,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,162,167,68,12
+    EDITTEXT        IDC_EDIT4,248,165,102,17,ES_AUTOHSCROLL
+    LTEXT           "Marks",IDC_STATIC,162,196,68,12
+    EDITTEXT        IDC_EDIT5,248,193,102,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "SEARCH",IDCANCEL3,369,41,70,28
+    LTEXT           "Department",IDC_STATIC,162,136,68,12
+    EDITTEXT        IDC_EDIT7,248,133,102,17,ES_AUTOHSCROLL
+END
+
+IDD_SEARCHSTUDENTFORM_DIALOG DIALOG DISCARDABLE  0, 0, 511, 277
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Search Student Form"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "GO BACK",IDOK,265,244,67,20
+    PUSHBUTTON      "SEARCH",IDCANCEL2,357,47,82,21
+    CTEXT           "SEARCH STUDENT FORM",IDC_STATIC,109,18,267,17
+    LTEXT           "Roll Num",IDC_STATIC,146,50,68,12
+    EDITTEXT        IDC_EDIT1,232,48,102,17,ES_AUTOHSCROLL
+    LTEXT           "Student Name",IDC_STATIC,146,79,68,12
+    EDITTEXT        IDC_EDIT2,232,76,102,17,ES_AUTOHSCROLL
+    LTEXT           "Semester",IDC_STATIC,146,106,68,12
+    EDITTEXT        IDC_EDIT3,232,104,102,17,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,146,156,68,12
+    EDITTEXT        IDC_EDIT4,232,154,102,17,ES_AUTOHSCROLL
+    LTEXT           "Marks",IDC_STATIC,146,183,68,12
+    EDITTEXT        IDC_EDIT5,232,182,102,17,ES_AUTOHSCROLL
+    LTEXT           "Bucket No",IDC_STATIC,146,215,60,13
+    EDITTEXT        IDC_EDIT6,232,214,100,16,ES_AUTOHSCROLL
+    LTEXT           "Department",IDC_STATIC,146,131,68,12
+    EDITTEXT        IDC_EDIT7,232,129,102,17,ES_AUTOHSCROLL
+END
+
+IDD_VIEWALLSTUDENTS_DIALOG DIALOG DISCARDABLE  0, 0, 393, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,181,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,211,181,50,14
+    EDITTEXT        IDC_EDIT1,31,18,318,149,ES_AUTOHSCROLL
+END
+
+IDD_STUDENTSALLVIEW_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "VIEW ALL",IDOK,263,7,50,14
+    PUSHBUTTON      "GO BACK",IDCANCEL,263,24,50,14
+    EDITTEXT        IDC_EDIT1,15,14,236,168,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "StudentProject MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "StudentProject\0"
+            VALUE "LegalCopyright", "Copyright (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "StudentProject.EXE\0"
+            VALUE "ProductName", "StudentProject Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STUDENTPROJECT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_ADMINMAINFORM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_NEWSTUDENTFORM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 482
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_DELETESTUDENTFORM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 490
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_MODIFYSTUDENTFORM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 511
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_SEARCHSTUDENTFORM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 504
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_VIEWALLSTUDENTS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_STUDENTSALLVIEW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About StudentProject..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) (unknown sub-lang: 0x10) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENN)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, 0x10
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\StudentProject.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\StudentProject.ico"
+#endif    // English (U.S.) (unknown sub-lang: 0x10) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\StudentProject.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

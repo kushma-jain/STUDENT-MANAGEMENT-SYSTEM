@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: StudentProject - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\KUSHMA~1\AppData\Local\Temp\RSP6109.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/StudentProject.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\fs\StudentProject\ModifyStudentForm.cpp"
+]
+Creating command line "cl.exe @C:\Users\KUSHMA~1\AppData\Local\Temp\RSP6109.tmp" 
+Creating temporary file "C:\Users\KUSHMA~1\AppData\Local\Temp\RSP610A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/StudentProject.pdb" /debug /machine:I386 /out:"Debug/StudentProject.exe" /pdbtype:sept 
+.\Debug\AdminMainForm.obj
+.\Debug\DeleteStudentForm.obj
+.\Debug\ModifyStudentForm.obj
+.\Debug\NewStudentForm.obj
+.\Debug\SearchStudentForm.obj
+.\Debug\StdAfx.obj
+.\Debug\StudentProject.obj
+.\Debug\StudentProjectDlg.obj
+.\Debug\StudentsAllView.obj
+.\Debug\ViewALLStudents1.obj
+.\Debug\StudentProject.res
+]
+Creating command line "link.exe @C:\Users\KUSHMA~1\AppData\Local\Temp\RSP610A.tmp"
+<h3>Output Window</h3>
+Compiling...
+ModifyStudentForm.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+StudentProject.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
